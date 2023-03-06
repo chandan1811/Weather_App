@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    width: 100vw;
+    height:100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://source.unsplash.com/random/?nature');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+
+}
+
+.header{
+    /* margin-top: -15px; */
+    position: relative;
+    font-size: 1.6rem;
+    padding: 3px;
+    font-weight: 500;
+    width: 100vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: black; */
+    color: white;
+    text-align: center;
+    text-shadow: #06283D;
+}
+
+.container-main{
+    width: 100vw;
+    height: 78vh;
+    display: flex;
+    padding: 0;
+    padding-bottom: 0px;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border-radius: 18px;
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    width: 30vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    align-items: center;
+}
+
+.search-outer{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box{
+    position: relative;
+    margin: 20px;
+    width: 30%;    
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    border-radius: 18px;
+    border: 0;
+}
+
+.search-box input{
+    color: white;
+    background: none;
+    width: 100%;
+    font-size: 1.0rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+    border-radius: 18px;
+
+}
+
+.search-box input :hover{
+    color: white;
+    background-color: #9ec0d5;
+    width: 100%;
+    font-size: 1.0rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+    border: 2px black;
+    border-radius: 18px;
+
+}
+
+.search-box input::placeholder{
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+}
+
+.search-box button{
+    position: relative;
+    left: -10px;
+    cursor: pointer;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background: none;
+    border-radius: 50%;
+    font-size: 22px;
+    transform: 0.4s ease;
+
+}
+
+/* .search-box button:hover{
+    color: #fff;
+    background-color: #06283D;
+    border: 0;
+} */
+
+.search-box i{
+    position: absolute;
+    color: #06283D;
+    font-size: 28px;
+}
+
+.weather-box{
+    margin-top: 5px;
+    font-size: 2rem;
+    /* background-color: #9ed6ee; */
+    color: white;
+    /* padding: 3px; */
+    width: 100%;
+}
+
+.container img{
+    margin-bottom: 30px;
+    width: 70%;
+    height: 40%;
+    justify-content: center;
+}
+
+.weather-box .temperature,.weather-box .description{
+    text-align: center;
+    font-size: 3rem;
+    /* padding: 3px; */
+}
+
+.weather-details{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    color: #9badb8;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.weather-details span{
+    color: #adc0cb;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.weather-details p{
+    color: #9badb8;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.weather-box .weather-details{
+    scale: 0;
+    opacity: 0;
+}
+
+.weather-details .wind{
+    text-align: center;
+    margin-bottom: 10px;
+    /* font-size: 20px; */
+}
+
+.weather-details .humidity{
+    text-align: center;
+}
+
+/* .fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+} */
+
+.anime{
+    animation-name: anime;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes anime {
+    from{
+        height: 0vh;
+    }
+    to{
+        height: 80vh;
+    }
+    
+}
